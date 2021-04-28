@@ -14,7 +14,7 @@ ROOT
 BASEURL
 EMAIL_USERNAME
 API_PASSWORD
-SENDERNAME
+SENDERNAME.
 Also all the details in accounts are false and the all have the same password:- 12345.
 
 ## Contributing
