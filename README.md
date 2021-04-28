@@ -15,6 +15,7 @@ BASEURL
 EMAIL_USERNAME
 API_PASSWORD
 SENDERNAME
+Also all the details in accounts are false and the all have the same password:- 12345.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
