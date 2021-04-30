@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once 'templates/header.php';
 require_once 'templates/sidebar.php';
 if(isset($_POST["save"])){
@@ -16,14 +17,18 @@ if(isset($_POST["save"])){
         $sqlcheck="select user_id from tbl_users where username='".$username."'";
         $s=mysqli_query($conn,$sqlcheck);    
         $rdata  = mysqli_fetch_assoc($s);
-        if(mysqli_num_rows($s)>0 && $rdata["user_id"] != $id) 
+        if(mysqli_num_rows($s)>0 && $rdata["user_id"] != $_SESSION["user_id"]) 
     {
         $msg = "This user is already exists. Please try another name";
     }else{
-        $sqlInsert = "update tbl_users set username='".$username."',first_name='".$f_name."',last_name='".$l_name."',email_id='".$email."',contact='".$contact."',address='".$address."',user_type='".$type."',created='".date("Y-m-d H:i:s")."' where user_id=".$id;    
+        if($_POST["txtType"]!=$_SESSION["user_type"]);
+        {
+            $_SESSION["user_type"]=$_POST["txtType"];
+        }
+        $sqlInsert = "update tbl_users set username='".$username."',first_name='".$f_name."',last_name='".$l_name."',email_id='".$email."',contact='".$contact."',address='".$address."',user_type='".$type."',created='".date("Y-m-d H:i:s")."' where user_id=".$_SESSION["user_id"];    
         if(mysqli_query($conn,$sqlInsert))
         {
-           header("Location: users.php");
+           header("Location: edit.php");
         }else{
             $msg.="Error".  mysqli_error($conn);
         }
