@@ -68,7 +68,7 @@ $res=mysqli_query($conn,$sqlcheck);
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2021 PECommerce. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a href="about_us.php">Raghav</a></span></p>
+					<p class="pull-right">Designed by <span><a href="about_us.php">PECobians</a></span></p>
 				</div>
 			</div>
 		</div>
