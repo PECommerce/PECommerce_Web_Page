@@ -32,10 +32,10 @@ require_once 'templates/header.php';
                         
                         <div class="control-group">
                                                             <h4 style="vertical-align: top; color:lightslategray">Welcome to PECommerce, your number one source for all books and notes in PEC. We're dedicated to providing you the very best of products, with an emphasis on quality and trust.<br><br>
-                                                                Founded in 2021 by Raghav Vashishth, PECommerce has come a long way from its beginnings in PEC. When I first started out, my passion for helping students drove me to start my own business.<br><br>
+                                                                Founded in 2021, PECommerce has come a long way from its beginnings in PEC. When I first started out, my passion for helping students drove me to start my own business.<br><br>
                                                                 I hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.<br><br>
                                                                 Sincerely,<br><br>
-                                                                Raghav Vashishth</h4>
+                                                                PECobians</h4>
                                                         </div> 
                                                         </div>
                                                 </div>   
