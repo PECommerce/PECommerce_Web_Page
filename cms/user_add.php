@@ -15,7 +15,7 @@ if(isset($_POST["save"])){
 
     $username = mysqli_real_escape_string($conn,$_POST["txtusername"]);
     $f_name=mysqli_real_escape_string($conn,$_POST["txtf_name"]);
-    $l_name=$mysqli_real_escape_string($conn,_POST["txtl_name"]);
+    $l_name=mysqli_real_escape_string($conn,$_POST["txtl_name"]);
     $pass = mysqli_real_escape_string($conn,md5($_POST["txtpass"]));
     $pass1 = mysqli_real_escape_string($conn,md5($_POST["txtpass1"]));
     $contact =  $_POST["txtcontact"];
